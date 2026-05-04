@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şehrim - Bolu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    /* Slider resimlerini dikey ve yatay olarak tam ortalar */
+    .carousel-item img {
+        height: 550px; /* İstediğin yüksekliği buradan ayarlayabilirsin */
+        width: 100%;
+        object-fit: cover; /* Resmi sündürmeden alanı kaplar */
+        object-position: center 60%; /* Resmi tam ortadan odaklar */
+    }
+
+    /* Yazı kutusunun stilini bozmadan resmin üzerinde daha net durmasını sağlar */
+    .carousel-caption {
+        background: rgba(0, 0, 0, 0.5); 
+        border-radius: 10px;
+        padding: 15px;
+    }
+</style>
+
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Web Projem</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Hakkında</a></li>
+                <li class="nav-item"><a class="nav-link" href="ozgecmis.html">Özgeçmiş</a></li>
+                <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+                <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+                <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+                <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                <li class="nav-item"><a class="nav-link text-info" href="index.html">Giriş</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid p-0">
+    <div id="boluSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#boluSlider" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#boluSlider" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#boluSlider" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#boluSlider" data-bs-slide-to="3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="bolu1.jpg" class="d-block w-100" alt="Abant">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                    <h3>Yedigöller Milli Parkı</h3>
+                    <p>Dört mevsim ayrı bir büyü sunan Bolu'nun simgesi.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="bolu2.jpg" class="d-block w-100" alt="Gölcük">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                    <h3>Bolu Meydan</h3>
+                    <p>Sakinliği ve eşsiz mimarisiyle huzurun adresi.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="bolu3.jpg" class="d-block w-100" alt="Yedigöller">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                    <h3>Tabiatın Kalbi Abant</h3>
+                    <p>Doğa fotoğrafçılarının ve kampçıların vazgeçilmez rotası.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="bolu4.jpg" class="d-block w-100" alt="Bolu Doğa">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded">
+                    <h3>Göynük İlçesi</h3>
+                    <p>Tertemiz havası ve yeşilin her tonuyla Bolu yaylaları.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#boluSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#boluSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="text-center mb-5">
+        <h1 class="display-4">Doğanın Kalbi: Bolu</h1>
+        <p class="text-muted">İstanbul ve Ankara'nın ortasında, yeşilin ve mavinin buluşma noktası.</p>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="content-box">
+                <h2 class="section-title">Genel Bakış</h2>
+                <p>Bolu, Türkiye’nin Karadeniz Bölgesi'nin Batı Karadeniz bölümünde yer alan, doğal güzellikleri ve köklü tarihiyle öne çıkan eşsiz bir şehrimizdir. Yüzölçümünün yaklaşık %65'i ormanlarla kaplı olan Bolu, Türkiye'nin "akciğerleri" olarak bilinir. Şehir, sadece doğasıyla değil, aynı zamanda stratejik konumuyla da dikkat çeker.</p>
+                
+                <h2 class="section-title">Tarihçe ve Kültür</h2>
+                <p>Bolu'nun tarihi antik dönemlere kadar uzanmaktadır. Hititler, Frigler, Lidyalılar, Persler ve Romalılar gibi pek çok medeniyete ev sahipliği yapmıştır. Osmanlı döneminde ise özellikle saray mutfağına yetiştirdiği aşçılarıyla nam salmıştır. Günümüzde Mengen ilçesinde yetişen aşçılar, dünyanın dört bir yanındaki lüks restoranlarda Türk mutfağını temsil etmektedir.</p>
+
+                <h2 class="section-title">Coğrafi Güzellikler</h2>
+                <p>Bolu denilince akla ilk gelen şey gölleridir. <strong>Abant Gölü</strong>, çevresindeki çam ve kayın ormanlarıyla yılın her vakti büyüleyicidir. <strong>Yedigöller Milli Parkı</strong>, özellikle sonbaharda büründüğü renk paletiyle bir tabloyu andırır. Heyelan set gölleri olan Büyükgöl, Seringöl, Deringöl, Nazlıgöl, Küçükgöl, İncegöl ve Sazlıgöl, doğaseverler için eşsiz bir yürüyüş rotası sunar. Ayrıca <strong>Gölcük Tabiat Parkı</strong>, kartpostallara konu olan o meşhur evi ve göl manzarasıyla şehrin en çok ziyaret edilen noktalarından biridir.</p>
+
+                <h2 class="section-title">İklim ve Turizm</h2>
+                <p>Karadeniz iklimi ile İç Anadolu iklimi arasında bir geçiş tipi görülür. Bu sayede kış sporları için <strong>Kartalkaya Kayak Merkezi</strong> gibi önemli bir merkeze sahiptir. Yaz aylarında ise yayla turizmi (Sarıalan, Aladağ, Kozlu gibi yaylalar) ön plana çıkar. Şehir aynı zamanda zengin termal kaynaklara sahip olduğundan sağlık turizmi açısından da büyük potansiyel taşımaktadır.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center mb-5">
+    <h2 class="section-title">Bolu Tanıtım Videosu</h2>
+    <div class="ratio ratio-16x9 shadow-lg rounded overflow-hidden mt-3">
+        <video controls>
+            <source src="bolu.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+        </video>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <div class="card bg-dark text-white border-0 shadow">
+        <div class="card-body p-4">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <h3>320.000+</h3>
+                    <p>Nüfus</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>%65</h3>
+                    <p>Orman Varlığı</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>8.313 km²</h3>
+                    <p>Yüzölçümü</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

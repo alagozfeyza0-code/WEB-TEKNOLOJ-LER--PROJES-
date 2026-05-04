@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirasımız - Bolu'nun Tarihi Dokusu</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('miras-genel.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .heritage-card {
+            border: none;
+            transition: transform 0.3s;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            height: 100%;
+        }
+        .heritage-card:hover {
+            transform: translateY(-10px);
+        }
+        .heritage-card img {
+            height: 250px;
+            object-fit: cover;
+        }
+        .section-accent {
+            width: 60px;
+            height: 4px;
+            background-color: #198754;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Web Projem</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Hakkında</a></li>
+                <li class="nav-item"><a class="nav-link" href="ozgecmis.html">Özgeçmiş</a></li>
+                <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+                <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+                <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+                <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                <li class="nav-item"><a class="nav-link text-info" href="index.html">Giriş</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Başlık Bölümü -->
+<div class="hero-section">
+    <div class="container">
+        <h1 class="display-3 fw-bold">Kültürel Mirasımız</h1>
+        <p class="lead">Bolu'nun derin tarihinden günümüze taşınan eşsiz hazineler.</p>
+        <div class="section-accent" style="background-color: white;"></div>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <div class="row g-4">
+        
+        <!-- Kart 1: Mudurnu ve Göynük Evleri -->
+        <div class="col-md-6">
+            <div class="card heritage-card">
+                <img src="miras.jpeg" class="card-img-top" alt="Mudurnu ve Göynük">
+                <div class="card-body p-4">
+                    <h3 class="card-title text-success">Geleneksel Sivil Mimari</h3>
+                    <h5 class="text-muted">Mudurnu ve Göynük Evleri</h5>
+                    <p class="card-text mt-3 text-secondary">
+                        Bolu'nun Mudurnu ve Göynük ilçeleri, Osmanlı döneminden kalma sivil mimari dokusuyla adeta bir açık hava müzesi niteliğindedir. <strong>UNESCO Dünya Miras Geçici Listesi</strong>'nde yer alan bu bölgeler, tarihi İpek Yolu üzerindeki durak noktaları olarak büyük öneme sahiptir.
+                    </p>
+                    <p class="card-text text-secondary">
+                        Bu evler; ahşap oymalı tavanları, avlulu yapıları ve karakteristik "çıkma"larıyla Türk ev tipolojisinin en saf örneklerini sunar. Akşemseddin Hazretleri'nin diyarı Göynük ve İpek Yolu'nun kalbi Mudurnu, kültürel mirasımızın en zarif parçalarıdır.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kart 2: Bolu Müzesi -->
+        <div class="col-md-6">
+            <div class="card heritage-card">
+                <img src="muze.jpeg" class="card-img-top" alt="Bolu Müzesi">
+                <div class="card-body p-4">
+                    <h3 class="card-title text-success">Tarihin İzleri</h3>
+                    <h5 class="text-muted">Bolu Müzesi</h5>
+                    <p class="card-text mt-3 text-secondary">
+                        1975 yılında kurulan Bolu Müzesi, bölgenin Neolitik dönemden Osmanlı'ya kadar uzanan binlerce yıllık tarihini gözler önüne sermektedir. Müze, arkeolojik ve etnografik olmak üzere iki ana bölümden oluşur.
+                    </p>
+                    <p class="card-text text-secondary">
+                        <strong>Arkeoloji Bölümü'nde;</strong> Roma, Bizans ve Hitit dönemlerine ait heykeller, mezar stelleri ve sikkeler yer alırken; <strong>Etnografya Bölümü'nde</strong> Bolu yöresine özgü el sanatları, geleneksel kıyafetler ve mutfak kültürü sergilenmektedir. Bolu'nun hafızası bu müzede korunmaktadır.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Bilgi Alt Bilgi -->
+<footer class="bg-light py-4 text-center border-top">
+    <div class="container">
+        <p class="text-muted mb-0">© 2026 Feyza Alagöz - Web Teknolojileri Projesi</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
