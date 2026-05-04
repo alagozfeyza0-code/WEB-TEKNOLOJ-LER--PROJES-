@@ -8,6 +8,87 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    
+    
+    <style> 
+       
+    /* Genel Sayfa Fontu ve Arkaplan */
+    body {
+        font-family: 'Inter', sans-serif;
+        background-color: #fcfcfc;
+    }
+
+    /* Hakkımda Metin Alanı */
+    .bg-light {
+        background-color: #ffffff !important;
+        border: 1px solid #eef0f2;
+        transition: all 0.3s ease;
+    }
+
+    /* Öğrenci Bilgileri Mavi Kartı */
+    .bilgi-karti {
+        background: linear-gradient(135deg, #0d6efd, #003d99) !important;
+        border-radius: 20px !important;
+        border: none !important;
+        transition: transform 0.3s ease;
+    }
+
+    .bilgi-karti:hover {
+        transform: translateY(-5px);
+    }
+
+    /* Hobi Grid Yapısı */
+    .hobi-konteynir {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    /* Hobi Kartları Tasarımı */
+    .hobi-kart {
+        height: 200px; /*  kibar bir yükseklik */
+        border-radius: 12px;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: flex-end;
+        transition: all 0.3s ease;
+        overflow: hidden;
+        border: 1px solid #ddd;
+    }
+
+    /* Üzerine gelince büyüme efekti */
+    .hobi-kart:hover {
+        transform: scale(1.04);
+        box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+    }
+
+    /* Kart Üzerindeki Yazı Alanı */
+    .hobi-detay {
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        width: 100%;
+        padding: 12px;
+        backdrop-filter: blur(3px); /* Modern cam efekti */
+    }
+
+    .hobi-detay h3 {
+        margin: 0;
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+
+    /* Responsive ayar: Mobilde yazıların düzgün görünmesi için */
+    @media (max-width: 768px) {
+        .hobi-konteynir {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+    }
+</style> 
+        
+  
+</head>
 </head>
 <body>
 
@@ -26,7 +107,8 @@
                 <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
                 <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
                 <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
-                <li class="nav-item"><a class="nav-link text-info" href="index.html">Giriş</a></li>
+                <li class="nav-item"><a class="nav-link" href="hakkimda.html">Hakkında</a></li>
+
             </ul>
         </div>
     </div>
@@ -35,34 +117,60 @@
     <!-- Header / Giriş Alanı -->
     <header class="hero-section text-white text-center py-5 mb-5">
         <div class="container">
-            <h1 class="display-4 fw-bold">Web Teknolojileri Projesi</h1>
-            <p class="lead">Kişisel Bilgiler, Akademik Geçmiş ve Şehir Tanıtımı</p>
+            <h1 class="display-4 fw-bold">Kişisel Web Sayfam</h1>
+            <p class="lead">Kişisel Bilgiler, Akademik Hayatım , İlgi Alanlarım ve  Memleketim</p>
         </div>
     </header>
 
-    <main class="container">
-        <div class="row g-4">
-            <!-- Hakkımda Bölümü -->
-            <div class="col-md-8">
-                <section class="card border-0 shadow-sm p-4">
-                    <h2 class="text-primary border-bottom pb-2 mb-3">Hakkımda</h2>
-                    <p>
-                        Merhaba, ben <strong>FEYZA ALAGÖZ</strong>. Bu platform, modern web standartları ve 
-                        responsive tasarım prensipleri kullanılarak geliştirilmiş bir portfolyo çalışmasıdır.
-                    </p>
-                    <p>
-                        Web geliştirme süreçlerinde HTML5, CSS3, JavaScript ve PHP teknolojilerini kullanarak 
-                        dinamik ve kullanıcı dostu arayüzler oluşturmayı hedefliyorum.
-                    </p>
-                    
-                    <h4 class="mt-4 text-secondary">Hobiler ve İlgi Alanları</h4>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">KODLAMA</li>
-                        <li class="list-group-item">TASARIM</li>
-                        <li class="list-group-item">YAZILIM GELİŞTİRME</li>
-                    </ul>
-                </section>
+   
+   <section id="hakkimda-bolumu" class="container my-5">
+    <!-- ANA HAKKIMDA ALANI -->
+    <article class="hakkimda-metin mb-5">
+        <h2 class="fw-bold">Hakkımda</h2>
+        <p>Merhaba, ben <strong>FEYZA ALAGÖZ</strong>. 10 Şubat 2006 tarihinde doğdum.İstanbulda yaşıyorum,Boluluyum. Sakarya Üniversitesi Bilgisayar ve Bilişim Bilimleri Fakültesinde Bilgisayar Mühendisliği 1. sınıf öğrencisiyim.Kendimi bölümümle ilgili olacak şekilde geliştiriyorum.En çok yapay zeka ve veri bilimi alanlarında çalışmalar yapmaktayım.</p>
+    </article>
+
+    <!-- İLGİ ALANLARI ALANI -->
+    <article id="ilgi-alanlarim">
+        <h3 class="fw-bold mb-4">İlgi Alanlarım Şunlardır</h3>
+        <div class="hobi-konteynir">
+            
+            
+            <!-- 1. Puzzle -->
+            <div class="hobi-kart" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('puzzle.jpg');">
+                <div class="hobi-detay"><h3>🧩 Puzzle</h3></div>
             </div>
+
+            <!-- 2. Buz Pateni -->
+            <div class="hobi-kart" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('Buz-pateni.jpg');">
+                <div class="hobi-detay"><h3>⛸️ Buz Pateni</h3></div>
+            </div>
+
+            <!-- 3. Kitap Okumak -->
+            <div class="hobi-kart" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('kitap-okumak.jpg');">
+                <div class="hobi-detay"><h3>📚 Kitap Okumak</h3></div>
+            </div>
+
+            <!-- 4. Lego Yapmak -->
+            <div class="hobi-kart" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('lego.jpg');">
+                <div class="hobi-detay"><h3>🧱 Lego Yapmak</h3></div>
+            </div>
+
+            <!-- 5. El İşleri -->
+            <div class="hobi-kart" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('el-isleri.jpg');">
+                <div class="hobi-detay"><h3>🎨 El İşleri</h3></div>
+            </div>
+
+            <!-- 6. Gezmek -->
+            <div class="hobi-kart" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('yeni-ulkeler.jpg');">
+                <div class="hobi-detay"><h3>✈️ Yeni Ülkeler Gezmek</h3></div>
+            </div>
+
+        </div>
+    </article>
+</section>
+
+     
             
             <!-- Bilgi Kartı -->
             <div class="col-md-4">
