@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlgi Alanlarım | Feyza Alagöz</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Harici CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigasyon Çubuğu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Web Projem</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Hakkımda</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="sehrim.html">Şehrim</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="mirasimiz.html">Mirasımız</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="ilgialanlarim.html">İlgi Alanlarım</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimda.html">Hakkımda</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Başlık Alanı -->
+    <header class="ilgi-hero text-white text-center">
+        <div class="container">
+            <h1>İlgi Alanlarım</h1>
+            <p>Hobilerim, kişisel ilgi alanlarım ve kitap önerileri API entegrasyonu</p>
+        </div>
+    </header>
+
+
+    <main class="container my-5">
+
+     <section class="mb-5">
+    <h2 class="bolum-baslik">Hobilerim ve İlgi Alanlarım</h2>
+
+    <div class="hobi-grid">
+
+        <div class="hobi-kart">
+            <img src="el-isleri.jpg" alt="El işleri" class="hobi-resim">
+            <div class="hobi-icerik">
+                <h3>El İşleri</h3>
+                <p>
+                    El işleriyle uğraşmak benim için hem üretken hem de rahatlatıcı bir aktivitedir.
+                    Bir şeyi sıfırdan ortaya çıkarmak, sabırlı olmayı ve detaylara dikkat etmeyi öğretir.
+                </p>
+            </div>
+        </div>
+
+        <div class="hobi-kart">
+            <img src="lego.jpg" alt="Lego" class="hobi-resim">
+            <div class="hobi-icerik">
+                <h3>Lego</h3>
+                <p>
+                    Lego ile uğraşmak yaratıcılığı geliştiren ve problem çözme becerisini artıran bir hobidir.
+                    Parçaları birleştirerek yeni yapılar oluşturmak benim için keyifli ve geliştirici bir süreçtir.
+                </p>
+            </div>
+        </div>
+
+        <div class="hobi-kart">
+            <img src="yeni-ulkeler.jpg" alt="Yeni ülkeler gezmek" class="hobi-resim">
+            <div class="hobi-icerik">
+                <h3>Yeni Ülkeler Gezmek</h3>
+                <p>
+                    Yeni ülkeler görmek, farklı kültürleri tanımak ve yeni yerler keşfetmek ilgimi çeker.
+                    Gezmek insanın bakış açısını genişletir ve farklı yaşam tarzlarını daha iyi anlamasını sağlar.
+                </p>
+            </div>
+        </div>
+
+        <div class="hobi-kart">
+            <img src="kitap-okumak.jpg" alt="Kitap okumak" class="hobi-resim">
+            <div class="hobi-icerik">
+                <h3>Kitap Okumak</h3>
+                <p>
+                    Kitap okumak kelime dağarcığımı geliştirir, düşünme biçimimi zenginleştirir ve farklı dünyalar tanımamı sağlar.
+                    Özellikle kişisel gelişim, roman ve teknolojiyle ilgili kitaplar ilgimi çeker.
+                </p>
+            </div>
+        </div>
+
+        <div class="hobi-kart">
+            <img src="Buz-pateni.jpg" alt="Buz pateni" class="hobi-resim">
+            <div class="hobi-icerik">
+                <h3>Buz Pateni</h3>
+                <p>
+                    Buz pateni hem denge hem de dikkat gerektiren eğlenceli bir spordur.
+                    Hareket ederken kontrol sağlamayı öğrenmek ve yeni beceriler denemek bu hobiyi benim için özel kılar.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+            
+
+        <!-- API Bölümü -->
+        <section class="api-alani">
+    <div class="api-kutu">
+
+        <div class="api-baslik">
+            <h2>Kitap Önerileri API Entegrasyonu</h2>
+            <p>
+                Bu bölümde ücretsiz Open Library API kullanılarak internet üzerinden kitap bilgileri çekilmektedir.
+                Kitap adı yazarak kitap kapağı, yazar adı ve ilk yayın yılı bilgilerine ulaşabilirsiniz.
+            </p>
+        </div>
+
+        <div class="api-arama">
+            <input type="text" id="kitapInput" placeholder="Kitap adı yazınız... Örneğin: Suç ve Ceza">
+            <button onclick="kitapAra()">Kitap Ara</button>
+        </div>
+
+        <div id="sonucAlani" class="sonuc-grid">
+            <!-- Kitap sonuçları JavaScript ile buraya gelecek -->
+        </div>
+
+    </div>
+</section>
+
+    </main>
+
+
+    <footer class="footer mt-5 py-4 bg-dark text-white text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Web Teknolojileri Dersi Proje Ödevi</p>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Harici JavaScript -->
+    <script src="ilgialanlarim.js"></script>
+
+</body>
+</html>

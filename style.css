@@ -27,3 +27,325 @@ main {
 footer {
     margin-top: auto;
 }
+
+
+/* İlgi Alanlarım Sayfası */
+
+/* İlgi Alanlarım Sayfası */
+
+.ilgi-hero {
+    background: linear-gradient(135deg, #0d6efd, #003d99);
+    padding: 80px 0;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.ilgi-hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.ilgi-hero p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.bolum-baslik {
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #2c3440;
+}
+
+/* Hobi kartları */
+
+.hobi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.hobi-kart {
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+    transition: 0.3s ease;
+}
+
+.hobi-kart:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.hobi-resim {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    display: block;
+}
+
+.hobi-icerik {
+    padding: 22px;
+}
+
+.hobi-icerik h3 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0d6efd;
+    margin-bottom: 12px;
+}
+
+.hobi-icerik p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* API Alanı */
+
+.api-alani {
+    margin-top: 60px;
+}
+
+.api-kutu {
+    background-color: #ffffff;
+    border-radius: 22px;
+    padding: 35px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.api-baslik h2 {
+    font-weight: 800;
+    color: #2c3440;
+}
+
+.api-baslik p {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.api-arama {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.api-arama input {
+    flex: 1;
+    padding: 13px 16px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+}
+
+.api-arama input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13,110,253,0.15);
+}
+
+.api-arama button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.api-arama button:hover {
+    background-color: #003d99;
+    transform: translateY(-2px);
+}
+
+.sonuc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.kitap-karti {
+    background-color: #f8f9fa;
+    border-radius: 18px;
+    padding: 18px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #e8e8e8;
+}
+
+.kitap-karti:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.kitap-karti img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #ddd;
+}
+
+.kitap-bilgi h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+.kitap-bilgi p {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.yukleniyor,
+.uyari-kutusu {
+    background-color: #eef4ff;
+    color: #0d6efd;
+    padding: 18px;
+    border-radius: 14px;
+    font-weight: 600;
+    text-align: center;
+    grid-column: 1 / -1;
+}
+
+/* Mobil uyum */
+
+@media (max-width: 768px) {
+    .ilgi-hero h1 {
+        font-size: 34px;
+    }
+
+    .api-arama {
+        flex-direction: column;
+    }
+
+    .api-arama button {
+        width: 100%;
+    }
+
+    .api-kutu {
+        padding: 22px;
+    }
+
+    .hobi-resim {
+        height: 190px;
+    }
+}
+
+/* API Alanı */
+
+.api-alani {
+    margin-top: 60px;
+}
+
+.api-kutu {
+    background-color: #ffffff;
+    border-radius: 22px;
+    padding: 35px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.api-baslik h2 {
+    font-weight: 800;
+    color: #2c3440;
+}
+
+.api-baslik p {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.api-arama {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.api-arama input {
+    flex: 1;
+    padding: 13px 16px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+}
+
+.api-arama input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13,110,253,0.15);
+}
+
+.api-arama button {
+    background-color: #0d6efd;
+    color: white;
+    border: none;
+    padding: 13px 25px;
+    border-radius: 12px;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.api-arama button:hover {
+    background-color: #003d99;
+    transform: translateY(-2px);
+}
+
+.sonuc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.kitap-karti {
+    background-color: #f8f9fa;
+    border-radius: 18px;
+    padding: 18px;
+    text-align: center;
+    transition: 0.3s;
+    border: 1px solid #e8e8e8;
+}
+
+.kitap-karti:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.kitap-karti img {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    background-color: #ddd;
+}
+
+.kitap-bilgi h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+.kitap-bilgi p {
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #444;
+}
+
+.yukleniyor,
+.uyari-kutusu {
+    background-color: #eef4ff;
+    color: #0d6efd;
+    padding: 18px;
+    border-radius: 14px;
+    font-weight: 600;
+    text-align: center;
+    grid-column: 1 / -1;
+}
