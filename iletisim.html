@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Vue.js CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Hakkında</a>
+            <a href="ozgecmis.html">Özgeçmiş</a>
+            <a href="sehrim.html">Şehrim</a>
+            <a href="mirasimiz.html">Mirasımız</a>
+            <a href="ilgi-alanlarim.html">İlgi Alanlarım</a>
+            <a href="iletisim.html">İletişim</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <main class="sayfa-alani">
+        <section class="iletisim-kutusu">
+            <h1>İletişim Formu</h1>
+            <p>
+                Benimle iletişime geçmek için aşağıdaki formu doldurabilirsiniz.
+            </p>
+
+            <form id="iletisimFormu" action="iletisim-sonuc.php" method="POST">
+
+                <label for="adsoyad">Ad Soyad:</label>
+                <input type="text" id="adsoyad" name="adsoyad" placeholder="Adınızı ve soyadınızı giriniz">
+
+                <label for="email">E-posta:</label>
+                <input type="text" id="email" name="email" placeholder="ornek@mail.com">
+
+                <label for="telefon">Telefon:</label>
+                <input type="text" id="telefon" name="telefon" placeholder="05xxxxxxxxx">
+
+                <label for="konu">Konu:</label>
+                <input type="text" id="konu" name="konu" placeholder="Mesaj konusunu yazınız">
+
+                <label for="sehir">Şehir:</label>
+                <select id="sehir" name="sehir">
+                    <option value="">Şehir seçiniz</option>
+                    <option value="Sakarya">Sakarya</option>
+                    <option value="İstanbul">İstanbul</option>
+                    <option value="İzmir">İzmir</option>
+                    <option value="Ankara">Ankara</option>
+                    <option value="Diğer">Diğer</option>
+                </select>
+
+                <p>Cinsiyet:</p>
+                <div class="radio-grup">
+                    <label>
+                        <input type="radio" name="cinsiyet" value="Kadın">
+                        Kadın
+                    </label>
+
+                    <label>
+                        <input type="radio" name="cinsiyet" value="Erkek">
+                        Erkek
+                    </label>
+
+                    <label>
+                        <input type="radio" name="cinsiyet" value="Belirtmek istemiyorum">
+                        Belirtmek istemiyorum
+                    </label>
+                </div>
+
+                <p>İlgi alanları:</p>
+                <div class="checkbox-grup">
+                    <label>
+                        <input type="checkbox" name="ilgi[]" value="Kitap Okumak">
+                        Kitap Okumak
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="ilgi[]" value="Film/Dizi İzlemek">
+                        Film/Dizi İzlemek
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="ilgi[]" value="Gezmek">
+                        Gezmek
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="ilgi[]" value="Buz Pateni">
+                        Buz Pateni
+                    </label>
+                </div>
+
+                <label for="mesaj">Mesajınız:</label>
+                <textarea id="mesaj" name="mesaj" rows="5" placeholder="Mesajınızı yazınız"></textarea>
+
+                <div class="butonlar">
+                    <button type="button" onclick="nativeKontrol()">JavaScript ile Kontrol Et</button>
+                    <button type="button" onclick="vueKontrol()">Vue.js ile Kontrol Et</button>
+                    <button type="reset">Temizle</button>
+                    <button type="submit">Gönder</button>
+                </div>
+
+                <div id="sonucMesaji"></div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Feyza - Web Teknolojileri Projesi</p>
+    </footer>
+
+    <script src="js/iletisim.js"></script>
+</body>
+</html>
