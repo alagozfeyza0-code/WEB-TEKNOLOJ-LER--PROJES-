@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Web Projem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Web Projem</div>
+
+        <nav>
+            <a href="index.html">Hakkında</a>
+            <a href="ozgecmis.html">Özgeçmiş</a>
+            <a href="sehrim.html">Şehrim</a>
+            <a href="mirasimiz.html">Mirasımız</a>
+            <a href="ilgialanlarim.html">İlgi Alanlarım</a>
+            <a href="iletisim.html">İletişim</a>
+            <a href="login.html">Login</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>LOGIN</h1>
+        <p>Öğrenci giriş sayfası</p>
+    </section>
+
+    <main class="container">
+        <section class="login-kutusu">
+            <h2>Giriş Yap</h2>
+
+            <p id="hataMesaji" class="hata-mesaji"></p>
+
+            <form action="login-sonuc.php" method="POST" onsubmit="return loginKontrol()">
+
+    <label for="email">Öğrenci E-posta Adresi:</label>
+    <input
+        type="text"
+        id="email"
+        name="email"
+        placeholder="feyza.alagoz@ogr.sakarya.edu.tr"
+    >
+
+    <label for="sifre">Şifre:</label>
+    <input
+        type="password"
+        id="sifre"
+        name="sifre"
+        placeholder="Öğrenci numaranızı giriniz"
+    >
+
+    <button type="submit">Giriş Yap</button>
+
+</form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Feyza - Web Teknolojileri Projesi</p>
+    </footer>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

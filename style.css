@@ -648,3 +648,57 @@ footer {
     text-align: center;
     padding: 60px 20px;
 }
+
+.login-kutusu {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 35px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.login-kutusu h2 {
+    color: #1455d9;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.login-kutusu form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-kutusu label {
+    font-weight: bold;
+    color: #333;
+}
+
+.login-kutusu input {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+.login-kutusu button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #1455d9;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-kutusu button:hover {
+    background-color: #0f3fa8;
+}
+
+.hata-mesaji {
+    color: #b00020;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
