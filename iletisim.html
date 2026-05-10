@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,11 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- Vue.js CDN -->
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-</head>
-<body>
 
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> <!-- Vue.js kütüphanesini ekler -->
+</head>
+
+<body>
     <header>
         <nav>
             <a href="index.html">Hakkında</a>
@@ -24,14 +25,15 @@
         </nav>
     </header>
 
-    <main class="sayfa-alani">
-        <section class="iletisim-kutusu">
+    <main class="sayfa-alani"> <!-- Ana içerik alanı, sayfanın geri kalanını kapsar -->
+        <section class="iletisim-kutusu"> <!-- İletişim formunu içeren kutu, stil için sınıf eklenir -->
             <h1>İletişim Formu</h1>
             <p>
                 Benimle iletişime geçmek için aşağıdaki formu doldurabilirsiniz.
             </p>
 
             <form id="iletisimFormu" action="iletisim-sonuc.php" method="POST">
+                <!-- Formun gönderileceği PHP dosyası ve POST yöntemi belirtilir -->
 
                 <label for="adsoyad">Ad Soyad:</label>
                 <input type="text" id="adsoyad" name="adsoyad" placeholder="Adınızı ve soyadınızı giriniz">
@@ -56,7 +58,7 @@
                 </select>
 
                 <p>Cinsiyet:</p>
-                <div class="radio-grup">
+                <div class="radio-grup"> <!-- Cinsiyet seçeneklerini içeren grup, stil için sınıf eklenir -->
                     <label>
                         <input type="radio" name="cinsiyet" value="Kadın">
                         Kadın
@@ -74,7 +76,7 @@
                 </div>
 
                 <p>İlgi alanları:</p>
-                <div class="checkbox-grup">
+                <div class="checkbox-grup"> <!-- İlgi alanları seçeneklerini içeren grup, stil için sınıf eklenir -->
                     <label>
                         <input type="checkbox" name="ilgi[]" value="Kitap Okumak">
                         Kitap Okumak
@@ -118,4 +120,5 @@
 
     <script src="js/iletisim.js"></script>
 </body>
+
 </html>

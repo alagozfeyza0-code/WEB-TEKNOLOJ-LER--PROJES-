@@ -1,89 +1,117 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- sayfanın mobil cihazlarda düzgün görünmesini sağlar        -->
     <title>Özgeçmiş | Feyza Alagöz</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS ekler -->
+    <link rel="stylesheet" href="style.css"> <!-- Harici CSS dosyasını bağlar -->
     <style>
-        .cv-header { background: #f8f9fa; padding: 40px 0; border-bottom: 3px solid #007bff; }
-        .skill-badge { margin-right: 5px; }
+        .cv-header {
+            background: #f8f9fa;
+            padding: 40px 0;
+            border-bottom: 3px solid #007bff;
+        }
+
+        .skill-badge {
+            margin-right: 5px;
+        }
     </style>
 </head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Web Projem</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Hakkında</a></li>
-                <li class="nav-item"><a class="nav-link" href="ozgecmis.html">Özgeçmiş</a></li>
-                <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
-                <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
-                <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
-                <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
-                <li class="nav-item"><a class="nav-link text-info" href="index.html">Login</a></li>
-            </ul>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <!-- Navbar'ı yapar, genişletilebilir, koyu tema ve sayfaya yapışık olur -->
+        <div class="container"> <!-- Navbar içeriğini sınırlamak ve ortalamak için container kullanılır -->
+            <a class="navbar-brand" href="index.html">Web Projem</a>
+            <!-- Navbar markası, tıklandığında index.html sayfasına gider -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <!-- Navbar'ın mobil görünümde açılır menü düğmesi -->
+                <span class="navbar-toggler-icon"></span> <!-- Düğmenin ikonunu gösterir -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Navbar içeriği, mobil görünümde açılır menü olarak gösterilir -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Hakkında</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ozgecmis.html">Özgeçmiş</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link text-info" href="index.html">Login</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
-    <header class="cv-header text-center">
-        <div class="container">
-            <img src="profil.jpeg" alt="Feyza Alagöz" class="rounded-circle shadow mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+    <header class="cv-header text-center"><!-- Özgeçmiş başlığı, ortalanmış ve özel bir arka plan rengine sahip -->
+        <div class="container"> <!-- İçeriği sınırlamak ve ortalamak için container kullanılır -->
+            <img src="profil.jpeg" alt="Feyza Alagöz" class="rounded-circle shadow mb-3"
+                style="width: 150px; height: 150px; object-fit: cover;">
+            <!-- Profil resmi, yuvarlak, gölgeli ve belirli boyutlarda gösterilir -->
             <h1>Feyza Alagöz</h1>
             <p class="lead">Sakarya Üniversitesi | Bilgisayar Mühendisliği Öğrencisi</p>
         </div>
     </header>
 
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-md-6">
+    <div class="container my-5"> <!-- Ana içerik alanı, üst ve alt boşluk ekler -->
+        <div class="row"> <!-- İki sütunlu bir düzen oluşturur -->
+            <div class="col-md-6"><!-- Sol sütun, eğitim bilgileri ve ilgi alanları için kullanılır -->
                 <h3><i class="bi bi-mortarboard"></i> Eğitim Bilgileri</h3>
-                <hr>
-                <div class="mb-4">
+                <!-- Eğitim bilgileri başlığı, ikon ile birlikte -->
+                <hr> <!-- Başlık altına yatay çizgi ekler -->
+                <div class="mb-4"><!-- Eğitim bilgisi bloğu, alt boşluk ekler -->
                     <h5>Sakarya Üniversitesi</h5>
                     <p>Bilgisayar Mühendisliği (Lisans) <br> <small class="text-muted">2025 - Devam Ediyor</small></p>
                 </div>
-                <div class="mb-4">
+                <div class="mb-4"> <!-- Eğitim bilgisi bloğu, alt boşluk ekler -->
                     <h5>Hasan Sabriye Gümüş Anadolu Lisesi</h5>
                     <p>Fen Bilimleri Mezunu <br> <small class="text-muted">2021 - 2025</small></p>
                 </div>
 
                 <h3 class="mt-5">İlgi Alanları</h3>
                 <hr>
-                <p>Sinema ve Film sektörü üzerine araştırmalar yapmaktan, yeni teknolojileri takip etmekten ve seyahat etmekten hoşlanırım.</p>
+                <p>Sinema ve Film sektörü üzerine araştırmalar yapmaktan, yeni teknolojileri takip etmekten ve seyahat
+                    etmekten hoşlanırım.</p>
             </div>
 
-            <div class="col-md-6">
+            <div class="col-md-6"><!-- Sağ sütun, yetenekler için kullanılır -->
                 <h3>Yetenekler</h3>
                 <hr>
-                <div class="mb-3">
-                    <label>HTML & CSS</label>
-                    <div class="progress"><div class="progress-bar bg-success" style="width: 90%">90%</div></div>
+                <div class="mb-3"><!-- Yetenek bloğu, alt boşluk ekler -->
+                    <label>HTML & CSS</label> <!-- Yetenek adı -->
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width: 90%">90%</div>
+                    </div> <!-- Yetenek seviyesi, yeşil renkli bir ilerleme çubuğu ile gösterilir -->
                 </div>
-                <div class="mb-3">
-                    <label>C# Programming</label>
-                    <div class="progress"><div class="progress-bar bg-primary" style="width: 75%">75%</div></div>
+                <div class="mb-3"> <!-- Yetenek bloğu, alt boşluk ekler -->
+                    <label>C# Programming</label> <!-- Yetenek adı -->
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" style="width: 75%">75%</div>
+                    </div>
                 </div>
-                <div class="mb-3">
-                    <label>C++ Programming</label>
-                    <div class="progress"><div class="progress-bar bg-info" style="width: 60%">60%</div></div>
+                <div class="mb-3"> <!-- Yetenek bloğu, alt boşluk ekler -->
+                    <label>C++ Programming</label> <!-- Yetenek adı -->
+                    <div class="progress">
+                        <div class="progress-bar bg-info" style="width: 60%">60%</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <footer class="bg-dark text-white text-center py-3">
+        <!-- Alt bilgi, koyu arka plan, beyaz metin, ortalanmış ve dikey olarak ortalanmış -->
         <p>&copy; 2026 Feyza Alagöz - B251210012</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap'ın JavaScript bileşenlerini ekler -->
 </body>
+
 </html>

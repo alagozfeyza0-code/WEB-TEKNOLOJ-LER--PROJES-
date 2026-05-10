@@ -1,80 +1,80 @@
-function nativeKontrol() {
-    const adsoyad = document.getElementById("adsoyad").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const telefon = document.getElementById("telefon").value.trim();
-    const konu = document.getElementById("konu").value.trim();
-    const sehir = document.getElementById("sehir").value;
-    const mesaj = document.getElementById("mesaj").value.trim();
-    const sonucMesaji = document.getElementById("sonucMesaji");
+function nativeKontrol()
+const adsoyad = document.getElementById("adsoyad").value.trim();
+const email = document.getElementById("email").value.trim();
+const telefon = document.getElementById("telefon").value.trim();
+const konu = document.getElementById("konu").value.trim();
+const sehir = document.getElementById("sehir").value;
+const mesaj = document.getElementById("mesaj").value.trim();
+const sonucMesaji = document.getElementById("sonucMesaji");
 
-    const cinsiyetSecildiMi = document.querySelector('input[name="cinsiyet"]:checked');
-    const ilgiSecildiMi = document.querySelectorAll('input[name="ilgi[]"]:checked');
+const cinsiyetSecildiMi = document.querySelector('input[name="cinsiyet"]:checked');
+const ilgiSecildiMi = document.querySelectorAll('input[name="ilgi[]"]:checked');
 
-    const emailKontrol = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    const telefonKontrol = /^[0-9]+$/;
+const emailKontrol = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+const telefonKontrol = /^[0-9]+$/;
 
-    if (adsoyad === "") {
-        sonucMesaji.innerHTML = "Ad soyad alanı boş bırakılamaz.";
-        sonucMesaji.style.color = "red";
-        return;
-    }
+if (adsoyad === "") {
+    sonucMesaji.innerHTML = "Ad soyad alanı boş bırakılamaz.";
+    sonucMesaji.style.color = "red";
+    return;
+}
 
-    if (email === "") {
-        sonucMesaji.innerHTML = "E-posta alanı boş bırakılamaz.";
-        sonucMesaji.style.color = "red";
-        return;
-    }
+if (email === "") {
+    sonucMesaji.innerHTML = "E-posta alanı boş bırakılamaz.";
+    sonucMesaji.style.color = "red";
+    return;
+}
 
-    if (!emailKontrol.test(email)) {
-        sonucMesaji.innerHTML = "Lütfen geçerli bir e-posta adresi giriniz.";
-        sonucMesaji.style.color = "red";
-        return;
-    }
+if (!emailKontrol.test(email)) {
+    sonucMesaji.innerHTML = "Lütfen geçerli bir e-posta adresi giriniz.";
+    sonucMesaji.style.color = "red";
+    return;
+}
 
-    if (telefon === "") {
-        sonucMesaji.innerHTML = "Telefon alanı boş bırakılamaz.";
-        sonucMesaji.style.color = "red";
-        return;
-    }
+if (telefon === "") {
+    sonucMesaji.innerHTML = "Telefon alanı boş bırakılamaz.";
+    sonucMesaji.style.color = "red";
+    return;
+}
 
-    if (!telefonKontrol.test(telefon)) {
-        sonucMesaji.innerHTML = "Telefon alanına sadece rakam girilmelidir.";
-        sonucMesaji.style.color = "red";
-        return;
-    }
+if (!telefonKontrol.test(telefon)) {
+    sonucMesaji.innerHTML = "Telefon alanına sadece rakam girilmelidir.";
+    sonucMesaji.style.color = "red";
+    return;
+}
 
-    if (konu === "") {
-        sonucMesaji.innerHTML = "Konu alanı boş bırakılamaz.";
-        sonucMesaji.style.color = "red";
-        return;
-    }
+if (konu === "") {
+    sonucMesaji.innerHTML = "Konu alanı boş bırakılamaz.";
+    sonucMesaji.style.color = "red";
+    return;
+}
 
-    if (sehir === "") {
-        sonucMesaji.innerHTML = "Lütfen bir şehir seçiniz.";
-        sonucMesaji.style.color = "red";
-        return;
-    }
+if (sehir === "") {
+    sonucMesaji.innerHTML = "Lütfen bir şehir seçiniz.";
+    sonucMesaji.style.color = "red";
+    return;
+}
 
-    if (!cinsiyetSecildiMi) {
-        sonucMesaji.innerHTML = "Lütfen cinsiyet seçiniz.";
-        sonucMesaji.style.color = "red";
-        return;
-    }
+if (!cinsiyetSecildiMi) {
+    sonucMesaji.innerHTML = "Lütfen cinsiyet seçiniz.";
+    sonucMesaji.style.color = "red";
+    return;
+}
 
-    if (ilgiSecildiMi.length === 0) {
-        sonucMesaji.innerHTML = "Lütfen en az bir ilgi alanı seçiniz.";
-        sonucMesaji.style.color = "red";
-        return;
-    }
+if (ilgiSecildiMi.length === 0) {
+    sonucMesaji.innerHTML = "Lütfen en az bir ilgi alanı seçiniz.";
+    sonucMesaji.style.color = "red";
+    return;
+}
 
-    if (mesaj === "") {
-        sonucMesaji.innerHTML = "Mesaj alanı boş bırakılamaz.";
-        sonucMesaji.style.color = "red";
-        return;
-    }
+if (mesaj === "") {
+    sonucMesaji.innerHTML = "Mesaj alanı boş bırakılamaz.";
+    sonucMesaji.style.color = "red";
+    return;
+}
 
-    sonucMesaji.innerHTML = "Native JavaScript kontrolü başarılı. Form gönderilebilir.";
-    sonucMesaji.style.color = "green";
+sonucMesaji.innerHTML = "Native JavaScript kontrolü başarılı. Form gönderilebilir.";
+sonucMesaji.style.color = "green";
 }
 
 function vueKontrol() {

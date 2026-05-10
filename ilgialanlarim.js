@@ -1,5 +1,5 @@
 // Sayfa açıldığında seçtiğim kitaplar API üzerinden getirilir.
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () { // Sayfa tamamen yüklendiğinde çalışacak kod bloğu
     seciliKitaplariGetir();
 });
 
@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", function () {
 // Sayfa ilk açıldığında gösterilecek kitaplar
 function seciliKitaplariGetir() {
 
-    const sonucAlani = document.getElementById("sonucAlani");
+    const sonucAlani = document.getElementById("sonucAlani");  // Sonuçların gösterileceği alan
 
-    const seciliKitaplar = [
+    const seciliKitaplar = [. // Gösterilecek kitapların isimleri
         "Devlet Plato",
         "Suç ve Ceza Dostoyevski",
         "Beyaz Geceler Dostoyevski",
@@ -18,7 +18,7 @@ function seciliKitaplariGetir() {
         "İnsan Neyle Yaşar Tolstoy"
     ];
 
-    sonucAlani.innerHTML = `
+    sonucAlani.innerHTML = `. 
         <div class="yukleniyor">
             Seçilen kitaplar yükleniyor...
         </div>
@@ -26,11 +26,11 @@ function seciliKitaplariGetir() {
 
     sonucAlani.innerHTML = "";
 
-    seciliKitaplar.forEach(function (kitapAdi) {
-        fetch(`https://openlibrary.org/search.json?q=${encodeURIComponent(kitapAdi)}`)
-            .then(function (cevap) {
-                return cevap.json();
-            })
+    seciliKitaplar.forEach(function (kitapAdi) {. // Her kitap adı için API çağrısı yaparak bilgileri getirir
+        fetch(`https://openlibrary.org/search.json?q=${encodeURIComponent(kitapAdi)}`). // API'ye kitap adıyla arama yapar
+            .then(function (cevap) {.
+            return cevap.json();
+        })
             .then(function (veri) {
 
                 // Kapak görseli olan ilk kitabı seçiyoruz.

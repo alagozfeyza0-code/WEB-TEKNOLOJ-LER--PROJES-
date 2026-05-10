@@ -1,22 +1,21 @@
-<!DOCTYPE html>. <!--bu satır belgenin HTML5 standardında yazıldığını  belirtir-->
+<!DOCTYPE html> <!--bu satır belgenin HTML5 standardında yazıldığını  belirtir-->
 <html lang="tr"> <!-- sayfanın dilini Türkçe olduğunu belirtir-->
 
-<head> <!--sayfanın tarayıcıya bilgi veren ayarlarının bulunduğu bölüm  -->
+<head> <!-- Sayfanın arka plandaki ayar merkezi -->
     <meta charset="UTF-8"> <!-- türkçe karakterlerin doğru görünmesini sağlar-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">.
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- sayfanın mobil cihazlarda düzgün görünmesini sağlar-->
     <title>Kişisel Web Portfolyosu | Hakkında</title>. <!-- tarayıcı sekmesinde görünen başlık-->
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">.
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap kütüphanesinin CSS dosyasını ekler-->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">.
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <!-- Google Fonts'tan Inter fontunu ekler-->
-    <link rel="stylesheet" href="style.css">.
+    <link rel="stylesheet" href="style.css">
     <!-- harici CSS dosyasını ekler,sayfanın özel tasarım ayarları style.css dosyasından alınır-->
 
 
     <style>
-        /* Genel Sayfa Yazı Tipi ve Arkaplan Rengi Ayarlanır */
         body {
             font-family: 'Inter', sans-serif;
             background-color: #fcfcfc;
@@ -29,7 +28,7 @@
             transition: all 0.3s ease;
         }
 
-        /* Öğrenci Bilgilerinin bulunduğu mavi kartın renk geçişi ,köşe yuvarlaklığı ve geçiş efekti ayarlanır */
+        /* Öğrenci Bilgilerinin bulunduğu köşe yuvarlaklığı ve geçiş efekti mavi kartın renk geçişi ,ayarlanır */
         .bilgi-karti {
             background: linear-gradient(135deg#0d6efd, #003d99) !important;
             border-radius: 20px !important;
@@ -248,35 +247,35 @@
 </head>
 </head>
 
-<body>. <!--body bölümü kullanıcının tarayıcıda gördüğü içeriklerin bulunduğu bölüm-->
+<body> <!--body bölümü kullanıcının tarayıcıda gördüğü içeriklerin bulunduğu bölüm-->
 
     <!-- Navigasyon Çubuğu : Kullanıcının web sitesindeki diğer sayfalara geçiş yapmasını sağlayan üst menüdür-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">.
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <!--Bootstrap sınıfları kullanılarak oluşturulmuş bir navigasyon çubuğu, koyu tema ve yapışkan özellikleri içerir-->
-        <div class="container">.
+        <div class="container">
             <!--Bootstrap sınıfı, içeriği belirli bir genişlikte ortalamak ve kenar boşlukları eklemek için kullanılır-->
-            <a class="navbar-brand" href="index.html">Web Projem</a>.
+            <a class="navbar-brand" href="index.html">Web Projem</a>
             <!--Web sitesinin logosu veya adı, tıklandığında index.html sayfasına yönlendirir-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">.
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <!--Mobil cihazlarda navigasyon menüsünü açmak için kullanılan düğme, Bootstrap'ın çökme (collapse) özelliğini kullanır-->
-                <span class="navbar-toggler-icon"></span>.
+                <span class="navbar-toggler-icon"></span>
                 <!--Bootstrap tarafından sağlanan simge, genellikle üç çizgi şeklinde görünür ve menüyü açmak için kullanılır-->
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">.
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <!--Navigasyon menüsünün içeriği, mobil cihazlarda çökme (collapse) özelliği ile gizlenebilir hale gelir-->
-                <ul class="navbar-nav ms-auto">.
+                <ul class="navbar-nav ms-auto">
                     <!--Navigasyon bağlantılarını içeren liste, ms-auto sınıfı ile sağa hizalanır-->
-                    <li class="nav-item"><a class="nav-link" href="index.html">Hakkında</a></li>.
+                    <li class="nav-item"><a class="nav-link" href="index.html">Hakkında</a></li>
                     <!--Navigasyon bağlantısı, tıklandığında index.html sayfasına yönlendirir-->
-                    <li class="nav-item"><a class="nav-link" href="ozgecmis.html">Özgeçmiş</a></li>.
+                    <li class="nav-item"><a class="nav-link" href="ozgecmis.html">Özgeçmiş</a></li>
                     <!--Navigasyon bağlantısı, tıklandığında ozgecmis.html sayfasına yönlendirir-->
                     <li class="nav-item"><a class="nav-link" href="sehrim.html">Şehrim</a></li>
                     <!--Navigasyon bağlantısı, tıklandığında sehrim.html sayfasına yönlendirir-->
-                    <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>.
+                    <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
                     <!--Navigasyon bağlantısı, tıklandığında mirasimiz.html sayfasına yönlendirir-->
-                    <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>.
+                    <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
                     <!--Navigasyon bağlantısı, tıklandığında ilgialanlarim.html sayfasına yönlendirir-->
-                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>.
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
                     <!--Navigasyon bağlantısı, tıklandığında iletisim.html sayfasına yönlendirir-->
                     <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
                     <!--Navigasyon bağlantısı, tıklandığında login.html sayfasına yönlendirir-->
@@ -287,28 +286,28 @@
     </nav>
 
     <!-- Header / Giriş Alanı: Sayfanın en üstünde görünen büyük başlık ve kısa açıklamalar alanıdır-->
-    <header class="hero-section text-white text-center py-5 mb-5">.
+    <header class="hero-section text-white text-center py-5 mb-5">
         <!--Büyük başlık ve açıklama içeren bir bölüm, metin beyaz, ortalanmış ve üstten/altan boşluklu olarak tasarlanır-->
-        <div class="container">.
+        <div class="container">
             <!--Bootstrap sınıfı, içeriği belirli bir genişlikte ortalamak ve kenar boşlukları eklemek için kullanılır-->
-            <h1 class="display-4 fw-bold">FEYZA ALAGÖZ</h1>.
+            <h1 class="display-4 fw-bold">FEYZA ALAGÖZ</h1>
             <!--Sayfanın ana başlığı, büyük ve kalın olarak tasarlanır-->
-            <p class="lead">Kişisel Bilgiler, Akademik Hayatım , İlgi Alanlarım ve Memleketim</p>.
+            <p class="lead">Kişisel Bilgiler, Akademik Hayatım , İlgi Alanlarım ve Memleketim</p>
             <!--Sayfanın kısa açıklaması, ana başlığın altında yer alır ve daha küçük bir yazı stili kullanılır-->
         </div>
     </header>
 
 
-    <section id="hakkimda-bolumu" class="container my-5">.
+    <section id="hakkimda-bolumu" class="container my-5">
         <!--Hakkımda bölümünün içeriğini tutan bölüm, Bootstrap sınıfı ile belirli bir genişlikte ortalanır ve üstten/altan boşluk eklenir-->
-        <div class="hakkimda-duzen">.
+        <div class="hakkimda-duzen">
             <!--Hakkımda bölümünün düzenini sağlayan bir kapsayıcı, grid yapısı kullanılarak iki sütunlu bir düzen oluşturulur-->
 
             <!-- SOL TARAF -->
-            <div class="sol-kolon">.
+            <div class="sol-kolon">
                 <!--Hakkımda bölümünün sol tarafını oluşturan kolon, öğrenci bilgileri, ilgi alanları ve sosyal medya bağlantılarını içerir-->
 
-                <div class="bilgi-kutusu">.
+                <div class="bilgi-kutusu">
                     <!--Öğrenci bilgilerini içeren beyaz kutu, başlık ve içerik bölümlerine ayrılır-->
                     <h2>İlgi Alanlarım</h2>
                     <ul>
@@ -322,7 +321,7 @@
                     </ul>
                 </div>
 
-                <div class="ogrenci-karti">.
+                <div class="ogrenci-karti">
                     <!--Öğrenci bilgilerini içeren mavi kart, başlık ve içerik bölümlerine ayrılır-->
                     <h4>Öğrenci Bilgileri</h4>
                     <hr>
@@ -331,7 +330,7 @@
                     <p><strong>Fakülte:</strong><br>Bilgisayar ve Bilişim Bilimleri Fakültesi</p>
                 </div>
 
-                <div class="sosyal-kutu">.
+                <div class="sosyal-kutu">
                     <!--Sosyal medya bağlantılarını içeren kutu, başlık ve içerik bölümlerine ayrılır-->
                     <h4>Sosyal Medya</h4>
 
@@ -343,17 +342,17 @@
             </div>
 
             <!-- SAĞ TARAF -->
-            <div class="sag-kolon">. <!--Hakkımda bölümünün sağ tarafını oluşturan kolon, video kartını içerir-->
+            <div class="sag-kolon"> <!--Hakkımda bölümünün sağ tarafını oluşturan kolon, video kartını içerir-->
 
-                <div class="video-karti">. <!--Video içeren kart, başlık ve video elementine ayrılır-->
+                <div class="video-karti"> <!--Video içeren kart, başlık ve video elementine ayrılır-->
                     <p class="video-yazisi">
                         "Kökerimin ait olduğu o yüksek, yalın ve vakur coğrafya: Bolu."
                     </p>
 
-                    <video controls preload="auto">.
+                    <video controls preload="auto">
                         <!--Video elementinin kontrol çubuğu görünür, video önceden yüklenir ve oynatılmaya hazır hale gelir-->
                         <source src="bolu.mp4" type="video/mp4"> <!--Video dosyasının kaynağı ve türü belirtilir-->
-                        Tarayıcınız videoyu desteklemiyor.
+                        Tarayıcınız videoyu desteklemiyor
                         <!--Eğer tarayıcı video formatını desteklemiyorsa gösterilecek mesaj-->
                     </video>
                 </div>
@@ -364,15 +363,15 @@
 
     </section>
 
-    <footer class="footer mt-5 py-4 bg-dark text-white text-center">.
+    <footer class="footer mt-5 py-4 bg-dark text-white text-center">
         <!--Sayfanın alt kısmında yer alan footer bölümü, koyu arka plan, beyaz metin ve ortalanmış içerik ile tasarlanır-->
-        <div class="container">.
+        <div class="container">
             <!--Bootstrap sınıfı, içeriği belirli bir genişlikte ortalamak ve kenar boşlukları eklemek için kullanılır-->
             <p class="mb-0">&copy; 2026 Web Teknolojileri Dersi Proje Ödevi</p>
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>.
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!--Bootstrap'ın JavaScript dosyasını ekler, bu dosya Bootstrap bileşenlerinin çalışması için gereklidir-->
 </body>
 
